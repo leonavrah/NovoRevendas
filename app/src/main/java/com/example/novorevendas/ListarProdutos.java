@@ -28,7 +28,8 @@ public class ListarProdutos extends AppCompatActivity {
         produtos = dao.obterTodos();
         produtosFiltros.addAll(produtos);
 
-        ArrayAdapter<Produtos> adaptador = new ArrayAdapter<Produtos>(this, android.R.layout.simple_list_item_1, produtos);
+        //ArrayAdapter<Produtos> adaptador = new ArrayAdapter<Produtos>(this, android.R.layout.simple_list_item_1, produtos);
+        ProdutoAdapter adaptador = new ProdutoAdapter(this,produtosFiltros);
         listview.setAdapter(adaptador);
 
 
