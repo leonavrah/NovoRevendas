@@ -22,9 +22,9 @@ public class ProdutoDAO {
     public long inserir(Produtos produtos) {
         ContentValues values = new ContentValues();
         values.put("nome",produtos.getNomeProduto());
-        values.put("nome,",produtos.getValorProduto());
-        values.put("nome",produtos.getTipoProduto());
-        values.put("nome",produtos.getDescricaoProduto());
+        values.put("valor",produtos.getValorProduto());
+        values.put("tipo",produtos.getTipoProduto());
+        values.put("descricao",produtos.getDescricaoProduto());
       return banco.insert("produto", null, values);
 
     }

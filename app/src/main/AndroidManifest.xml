@@ -9,16 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListarProdutos"></activity>
-        <activity android:name=".cadastrarProduto">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".menuProdutos" />
-        </activity>
-        <activity android:name=".menuProdutos">
+        <activity android:name=".ListarProdutos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Menu" />
+        </activity>
+        <activity android:name=".cadastrarProduto">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListarProdutos" />
         </activity>
         <activity android:name=".Menu">
             <meta-data

@@ -28,6 +28,9 @@ public class Menu extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
+                        Intent intent = new Intent (getApplicationContext(),ListarProdutos.class);
+                        startActivity(intent);
+
                         btFinanceiro = findViewById(R.id.cmdFinanceiro);
                         btFinanceiro.setOnClickListener(new View.OnClickListener() {
                             @Override
@@ -36,8 +39,7 @@ public class Menu extends AppCompatActivity {
                             }
                         });
 
-                        Intent intent = new Intent(getApplicationContext(),menuProdutos.class);
-                        startActivity(intent);
+
                     }
                 });
 
