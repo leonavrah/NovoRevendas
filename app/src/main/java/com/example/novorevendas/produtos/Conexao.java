@@ -1,4 +1,4 @@
-package com.example.novorevendas;
+package com.example.novorevendas.produtos;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -1,4 +1,4 @@
-package com.example.novorevendas;
+package com.example.novorevendas.menus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.novorevendas.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(),Menu.class);
+                Intent intent = new Intent(getApplicationContext(), Menu.class);
                 startActivity(intent);
 
 

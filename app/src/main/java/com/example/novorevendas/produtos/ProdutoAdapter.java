@@ -1,10 +1,12 @@
-package com.example.novorevendas;
+package com.example.novorevendas.produtos;
 
 import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.novorevendas.R;
 
 import java.util.List;
 

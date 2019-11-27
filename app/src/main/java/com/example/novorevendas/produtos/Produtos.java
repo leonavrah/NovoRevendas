@@ -1,4 +1,4 @@
-package com.example.novorevendas;
+package com.example.novorevendas.produtos;
 import java.io.Serializable;
 
 public class Produtos implements Serializable {

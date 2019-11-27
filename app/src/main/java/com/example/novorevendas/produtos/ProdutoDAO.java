@@ -1,4 +1,4 @@
-package com.example.novorevendas;
+package com.example.novorevendas.produtos;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -48,4 +48,19 @@ public class ProdutoDAO {
 
         return produtos;
     }
-}
+
+    public void excluir(Produtos p){
+        banco.delete("produto","id = ?",new String[]{p.getId().toString()});
+    }
+
+    public void atualizar(Produtos produtos){
+        ContentValues values = new ContentValues();
+        values.put("nome",produtos.getNomeProduto());
+        values.put("valor",produtos.getValorProduto());
+        values.put("tipo",produtos.getTipoProduto());
+        values.put("descricao",produtos.getDescricaoProduto());
+        banco.update("produto",values, "id= ?", new String[]{produtos.getId().toString()});
+    }
+
+    }
+
